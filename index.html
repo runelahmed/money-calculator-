@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Money Master</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+      #loading, #results {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Money Master</h1>
+            <form id="loan-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Income</span>
+                  <input type="number" class="form-control" id="income" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Food</span>
+                  <input type="number" class="form-control" id="food" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Rent</span>
+                  <input type="number" class="form-control" id="rent" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Clothes</span>
+                  <input type="number" class="form-control" id="clothes" placeholder="">
+                </div>
+              </div>
+              <div class="forn-group">
+                <input id="calculate" type="submit" value="Calculate" class="btn btn-dark btn-block" style="cursor: pointer;">
+              </div>
+            </form>
+            <!-- LOADER -->
+          
+            <div id="loading">
+              <img src="images/loading.gif" alt="">
+            </div>
+      
+            <!-- RESULTS -->
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Total Expense</span>
+                  <input type="number" class="form-control" id="total-expenses" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Balance</span>
+                  <input type="number" class="form-control" id="balance" disabled>
+                </div>
+              </div>
+              <h5>Saving Money</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">%</span>
+                  <input type="number" class="form-control" id="save">
+                </div>
+              </div>
+              <div class="forn-group">
+                <input id="save-btn" type="submit" value="Save" class="btn btn-dark btn-block mb-3" style="cursor: pointer;">
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Saving Account</span>
+                  <input type="number" class="form-control" id="saving-account" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Remaining Balance</span>
+                  <input type="number" class="form-control" id="remaining-balance" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
